@@ -1,0 +1,40 @@
+{
+  "name": "myhabeetat",
+  "version": "1.0.0",
+  "description": "Node.js wrapper for Solidmation's MyHabeetat API.",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomasmigone/myhabeetat.git"
+  },
+  "keywords": [
+    "solidmation",
+    "myhabeetat",
+    "home",
+    "automation"
+  ],
+  "author": "Tomás Migone <tomas@p4d.com.ar> (http://www.programming4design.com.ar)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomasmigone/myhabeetat/issues"
+  },
+  "homepage": "https://github.com/tomasmigone/myhabeetat#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^8.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^6.1.4"
+  }
+}
