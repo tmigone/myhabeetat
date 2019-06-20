@@ -31,7 +31,7 @@ describe('#BGHSmartControl.parse()', function () {
   context('with good endpoint values', function () {
     let data
     before(function () {
-      data = BGHSmartControl.parse(goodEndpoint)
+      data = BGHSmartControl.parseStatus(goodEndpoint)
     })
     it('should return the parsed data object', function () {
       expect(data).to.be.an('object')
@@ -48,7 +48,7 @@ describe('#BGHSmartControl.parse()', function () {
   })
   context('with bad endpoint values', function () {
     it('should fail and throw a known error', function () {
-      expect(() => { BGHSmartControl.parse(badEndpoint) }).to.throw(Error, 'Error parsing packet for device.')
+      expect(() => { BGHSmartControl.parseStatus(badEndpoint) }).to.throw(Error, 'Error parsing packet for device.')
     })
   })
 })

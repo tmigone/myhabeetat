@@ -2,7 +2,7 @@
   "name": "myhabeetat",
   "version": "1.0.0",
   "description": "Node.js wrapper for Solidmation's MyHabeetat API.",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha tests/"
   },
@@ -14,7 +14,10 @@
     "solidmation",
     "myhabeetat",
     "home",
-    "automation"
+    "automation",
+    "bgh",
+    "smart",
+    "control"
   ],
   "author": "Tomás Migone <tomas@p4d.com.ar> (http://www.programming4design.com.ar)",
   "license": "MIT",
@@ -23,7 +26,8 @@
   },
   "homepage": "https://github.com/tomasmigone/myhabeetat#readme",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "config": "^3.1.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
