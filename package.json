@@ -1,6 +1,6 @@
 {
   "name": "myhabeetat",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Node.js wrapper for Solidmation's MyHabeetat API.",
   "main": "index.js",
   "scripts": {
