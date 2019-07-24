@@ -4,7 +4,8 @@
   "description": "Node.js wrapper for Solidmation's MyHabeetat API.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/"
+    "test": "mocha tests/",
+    "deploy": "npm publish --access public"
   },
   "repository": {
     "type": "git",
