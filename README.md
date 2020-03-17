@@ -4,7 +4,7 @@ Wrapper for MyHabeetat API, control your devices using nodejs.
 Supports Solidmation devices, including: 
 - BGH Smart Control
 
-## Installation
+## Installation
 Install it via NPM:
 
 ```bash
