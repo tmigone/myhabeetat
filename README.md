@@ -26,7 +26,7 @@ let homes = await MyHabeetat.getHomes(token)
 let devices = await MyHabeetat.getDevices(token, homes[0])
 
 // Turn on device. 15 is model code for BGH Smart Control
-let result = await MyHabeetat.turnOnDevice(token, 15, devices[0])
+let result = await MyHabeetat.turnOnDevice(token, 15, devices[0].endpoint)
 ```
 
 ## MyHabeetat methods
@@ -54,7 +54,7 @@ let result = await MyHabeetat.turnOnDevice(token, 15, devices[0])
 #### Returns
 - devices (array): Array of device objects for the given home
 
-### MyHabeetat.getDeviceStatus(token, home)
+### MyHabeetat.getDeviceStatus(token, home, device)
 #### Arguments
 - token (string): A valid My Habeetat auth token
 - home (integer): Home ID to get devices from
