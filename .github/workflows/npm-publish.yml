@@ -1,25 +1,17 @@
-name: npm-publish
+name: Run versionist
 on:
   push:
     branches:
       - master
+
 jobs:
-  npm-publish:
-    name: npm-publish
+  versionist:
     runs-on: ubuntu-latest
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@master
-    - name: Set up Node.js
-      uses: actions/setup-node@master
+    steps: 
+    - uses: actions/checkout@v1
+    - uses: tmigone/versionist-action@master
       with:
-        node-version: 10.0.0
-    - name: Publish if version has been updated
-      uses: pascalgn/npm-publish-action@1.2.0
-      with:
-        tag_name: "v%s"
-        tag_message: "v%s"
-        commit_pattern: "^Release (\\S+)"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        github_email: 'tomasmigone@gmail.com'
+        github_username: 'Tomás Migone'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        npm_token: ${{ secrets.NPM_TOKEN }}
